@@ -1,0 +1,104 @@
+.doctors-archive {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.doctors-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.doctors-filters label {
+  font-weight: bold;
+}
+
+.doctors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.doctor-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  transition: box-shadow 0.3s;
+  text-decoration: none;
+}
+.doctor-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card__thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  aspect-ratio: 16 / 11;
+  object-fit: contain;
+}
+.doctor-card__name {
+  font-size: 1.4rem;
+  margin: 10px 0 0;
+}
+.doctor-card__meta {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+}
+.doctor-card__specialization {
+  color: #555;
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.doctor-card__specialization-text {
+  font-weight: 400;
+}
+
+.doctors-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.doctors-pagination a,
+.doctors-pagination span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+.doctors-pagination .current {
+  background-color: #0073aa;
+  color: #fff;
+  border-color: #0073aa;
+}
+
+.doctor-single {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.doctor__title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.doctor__thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  aspect-ratio: 16/11;
+  object-fit: contain;
+}
+.doctor__taxonomy {
+  margin: 5px 0;
+}
+.doctor__excerpt {
+  color: #555;
+  margin: 8px 0;
+}
