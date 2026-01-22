@@ -13,9 +13,6 @@ function my_doctors_archive_posts_per_page($query)
 
   if ($query->is_post_type_archive('doctors')) {
 
-    // Сброс пагинации при задании фильтра
-    $query->set('paged', 1);
-
     // ТЗ: вывод по 9 элементов на страницу
     $query->set('posts_per_page', 9);
 

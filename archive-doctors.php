@@ -7,7 +7,7 @@ get_header();
   <h1>Наши доктора</h1>
 
   <!-- Фильтр -->
-  <form method="get" class="doctors-filters">
+  <form method="get" class="doctors-filters" action="<?php echo esc_url(get_post_type_archive_link('doctors')); ?>">
 
     <!-- Специализация -->
     <label for="specialization">Специализация:</label>
